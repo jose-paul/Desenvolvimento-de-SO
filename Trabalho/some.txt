@@ -1,0 +1,25 @@
+(async () => {
+    const db = require("./db");
+    console.log('Começou!');
+
+    console.log('INSERT INTO cliente');
+    await db.insertCliente({nome: "MESSI"});
+
+    console.log('SELECT * FROM cliente');
+    const clientes = await db.selectClientes();
+    console.log(clientes);
+
+    console.log('UPDATE cliente');
+    await db.updateCliente(9, {nome: "Ronaldo"});
+
+    console.log('SELECT * FROM cliente');
+    const cl = await db.selectClientes();
+    console.log(cl);
+
+    console.log('DELETING cliente');
+    await db.deleteCliente(3);
+
+    console.log('SELECT * FROM cliente');
+    const cl1 = await db.selectClientes();
+    console.log(cl1);
+})();

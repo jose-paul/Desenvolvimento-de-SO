@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+  <%- include('head'); %>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap theme -->
+  <link href="../../dist/css/bootstrap-theme.min.css" rel="stylesheet">
+   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+   <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+   <!-- Custom styles for this template -->
+   <link href="theme.css" rel="stylesheet">
+  
+  <body>
+    <section class="container-fluid">
+      <section class = "row justify-content-center">
+        <section class = "col-12 col-sm-6 col-md-3">
+          <section class = "form-container">
+              <div class="mt-5">
+
+
+                <form method="POST" action="/cadastroEntregador">
+                  
+                  <div class="mb-3">
+                    <label for="inputNome" class="form-label">Nome</label>
+                    <input type="" class="form-control" name="inputNome" id="inputNome">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="inputEmail" id="inputEmail">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="inputPhone" class="form-label">Número de celular</label>
+                    <input type="" class="form-control" name="inputPhone" id="inputPhone">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="inputSenha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" name="inputSenha" id="inputSenha">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="inputCPF" class="form-label">CPF</label>
+                    <input type="" class="form-control" name="inputCPF" id="inputCPF">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="inputPix" class="form-label">Número do Pix</label>
+                    <input type="" class="form-control" name="inputPix" id="inputPix">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputVeiculo">Veículo:</label>
+                    <select class="form-control" name="inputVeiculo" id="inputVeiculo">
+                      <option>Bicicleta</option>
+                      <option>Moto</option>
+                      <option>Carro comum</option>
+                      <option>Caminhonete/Van</option>
+                      <option>Caminhão</option>
+                    </select>
+                  </div>
+                  
+
+                  <button type="submit" class="btn btn-primary">Registrar conta</button>
+                </form>
+
+
+              </div>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

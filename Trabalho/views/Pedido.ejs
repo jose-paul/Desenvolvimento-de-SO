@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+  <%- include('head'); %>
+
+  <body>
+    <section class="container-fluid">
+      <section class = "row justify-content-center">
+        <section class = "col-12 col-sm-2 col-md-3">
+          <section class = "form-container">
+              <div class="mt-5">
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <a>Preço aproximado:</a>
+                      <b>50R$</b>
+                    </div>
+                    <div class="col-12">
+                      <a>Tempo aproximado para pegar o objeto:</a>
+                      <b>45 minutos</b>
+                    </div>
+                  </div>
+
+              </div>
+
+                <form method="POST" action="/pedido">
+
+                  <div class="mb-3">
+                    <label for="inputNome" class="form-label">Qual é o objeto a ser transportado?</label>
+                    <input type="" class="form-control" name="inputNome" id="inputNome">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="inputPeso" class="form-label">Qual o peso aproximado do objeto?</label>
+                    <input type="" class="form-control" name="inputPeso" id="inputPeso">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="inputDesc" class="form-label">Breve descrição do objeto, se necesário</label>
+                    <input type="" class="form-control" name="inputDesc" id="inputDesc">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="inputOrigem" class="form-label">Localização do objeto</label>
+                    <input type="" class="form-control" name="inputOrigem" id="inputOrigem">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="inputDestino" class="form-label">Para onde está indo</label>
+                    <input type="" class="form-control" name="inputDestino" id="inputDestino">
+                  </div>
+  
+                  <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Se compartilhado, indique o email do outro usuário</label>
+                    <input type="" class="form-control" name="inputEmail" id="inputEmail">
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Registrar conta</button>
+                </form>
+
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
