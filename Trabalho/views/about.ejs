@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+  <%- include('head'); %>
+
+  <body>
+    <section class="container-fluid">
+        <section>
+          <section class = "form-container">
+              <div class="mt-5" style="text-align: left;">
+                <p style="text-align: left; text-indent: 40px;">O sistema de entregas de encomendas é um sistema de multi-usuários, totalmente online. O objetivo do sistema é facilitar o transporte de mercadorias, seja de pequeno ou grande porte, e que será realizada em pequenas distâncias.
+                  De forma mais objetiva, o que será realizado é o transporte de um objeto x, que está em posse do cliente, que, pelo sistema, fará requisito do transporte, isto é, encontrar um entregador que fará o transporte deste objeto até o local desejado. Os usuários (cliente e entregador) não são empresas, são pessoas físicas.
+                </p> 
+                    <p style="text-align: left; text-indent: 40px;">Os usuários se categorizam em dois grupos: entregadores e clientes.
+                      Usuários (a classe pai de entregador e cliente) possui ID, nome, documentos pessoais (cpf, rg) email e senha.
+                      Entregadores são usuários que possuem como dados as seguintes informações: documentos pessoais (cpf, rg) obrigatoriamente, banco e veículo. Além de constar no sistema a média de notas que ele recebe (caso o cliente opte por avaliá-lo após uma entrega).
+                      Por sua vez, cliente, possui apenas o dado cartão de crédito, além de possuir um comportamento diferente. É possível que ele coloque um produto para ser transportado.
+                    </p>
+                    <p style="text-align: left; text-indent: 40px;">
+                      Ao fazer um pedido de transporte deve conter informações sobre o produto a ser transportado: origem, destino, peso, tamanho, fragilidade do produto e se será compartilhado (falaremos sobre isso mais pra frente). Alguns destes dados serão úteis para que seja possível filtrar entregadores 
+                      que sejam capazes de transportar um determinado produto, para que um entregador com uma bicicleta não transporte uma geladeira, por exemplo.
+                      O compartilhamento possui como função dividir o preço da entrega entre dois usuários clientes. O primeiro deverá inserir todos os dados, assim como indicar o segundo usuário, este deverá verificar as informações e confirmar o pedido. E isto se repete para a seleção do entregador.
+                    </p>
+                    <p style="text-align: left; text-indent: 40px;">
+                      Em um fluxo normal o cliente cadastra o produto com as informações necessárias, o sistema filtra os entregadores que são capazes de efetuar o transporte, e que estão disponíveis no momento, determina o preço além de estipular um tempo provável de busca e entrega do produto.
+                      O sistema, depois do cliente escolher o entregador ideal para entrega, tem um conjunto de informações: produto, entregador e rota. Esse conjunto será uma classe chamada transporte.
+                     
+                      Transporte atualizará a todo momento a localização atual do entregador, antes mesmo que ele pegue o produto efetivamente, e o cliente terá essa informação até que o entregador entregue a encomenda.
+                  
+                      Por fim, depois que o produto já estiver em seu destino, o sistema fará o pagamento ao entregador e a cobrança para o cliente (ou os dois clientes, caso o compartilhamento esteja sendo usado).
+                    </p>
+
+                    <p style="text-align: center; text-indent: 40px;"> Projeto desenvolvido para a disciplina de Desenvolvimento de software da Universidade Federal de Pelotas pelo grupo: José Felipe, Gabriel Schubert, Ricardo Padilha, Guilherme .... e Ari Vitor Lazzarotto.</p>
+               
+              </div>
+          </section>
+        </section>
+  </section>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

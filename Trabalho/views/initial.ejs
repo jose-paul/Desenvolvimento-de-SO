@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbars/">
+
+    <style>
+  /* ESTILOS GLOBAIS
+-------------------------------------------------- */
+/* Padding abaixo do footer e texto mais suave no <body> */
+
+body {
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZA O CAROUSEL
+-------------------------------------------------- */
+
+/* Classe base do carousel */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Já que usamos posicionamento de imagens, precisaremos fazer alguns ajustes na legenda */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declaramos alturas, devido ao posicionamento do elemento img */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* CONTEÚDO DO MARKETING
+-------------------------------------------------- */
+
+/* Alinha, centralmente, o texto dentro das três colunas abaixo do carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featrurezinhas
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Espaça o elemento <hr> mais */
+}
+
+/* Afina os cabeçalhos de marketing */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* CSS RESPONSIVE
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Aumenta o tamanho do conteúdo do carousel */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: black;
+  }
+  .carousel-caption h1{
+    color: black;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+    </style>
+  
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+  </head>
+
+  <%- include('head');  %>
+
+  <body>
+
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        
+        
+        
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="https://mappsistemas.com.br/paginas/wp-content/uploads/2021/09/2021-09-melhorar-o-servico-de-entregas.jpg" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>FedOR</h1>
+                <p>O site feito para você, onde ligamos sua encomenda a qualquer destino</p>
+                <p>Trabalhos de cartas a grandes móveis e drogas</p>
+                <p><a class="btn btn-lg btn-primary" href="/cadastro" role="button">Cadastre-se Agora</a></p>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+
+
+      <!-- Mensagens de marketing e outras featurezinhas
+      ================================================== -->
+      <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
+
+      <div class="container marketing">
+
+        <!-- Três colunas de texto, abaixo do carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="https://m2s5m8t8.rocketcdn.me/wp-content/uploads/mapa-do-brasil.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Entregas</h2>
+            <p>Entregamos em todo territorio nacional para você. Te auxiliando no primeiro passo daquela tão desejada mudança.</p>
+            
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="https://img.freepik.com/free-vector/hand-shake-handshake-business-man-businessmen-shaking-hands-as-success-partnership-deal-concept-illustration-isolated-white-background-clipart_212005-185.jpg?w=2000" alt="Generic placeholder image" width="140" height="140">
+            <h2>Segurança</h2>
+            <p>Garantimos sua entrega, não importa o tipo, ela vai chegar lá</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="http://pm1.narvii.com/6721/c170f428ae566bc03246751db455001682775000_00.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Precimos de Você</h2>
+            <p>Coloque um 10 ai, não precisa continuar vendo o site</p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- COMEÇAM AS MENCIONADAS FEATUREZINHAS xD -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Cadastre de forma rápida!!!<span class="text-muted">  Leve menos de 5 minutos!</span></h2>
+            <p class="lead">Com seu Telefone, nome, Cartão de Credito e e-mail, já é possível iniciar as suas entregas</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="http://www.avmpmpr.com.br/site/wp-content/uploads/2018/11/cadastro.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Entregador, precisamos de você! <span class="text-muted">Garantimos os melhores pagamentos</span></h2>
+            <p class="lead">As taxas são distribuidas de forma justa e levando em consideração você entregador!</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="https://img.freepik.com/vetores-gratis/entregador-montando-a-ilustracao-de-scooter-vermelho_9845-14.jpg?w=2000" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Saiba mais <span class="text-muted">Este trabalho merece um 10</span></h2>
+            <p class="lead">Este trabalho nos ajudou a entender e amar você professor Lisane, então nos de o 10</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="https://super.abril.com.br/wp-content/uploads/2001/06/afinal-o-que-ecc81-amor.jpeg?quality=90&strip=info&w=1024" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /FIM DAS FEATUREZINHAS *-* -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="\">Voltar ao topo</a></p>
+        <p>&copy; Desenvolvimento de Software, 2022 &middot; <a href="\sobre">Sobre</a></p>
+      </footer>
+    </main>
+
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Só faz o nossos placeholders de imagens funcionarem. Não precisar copiar a próxima linha! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>

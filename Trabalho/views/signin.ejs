@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+   <%- include('head');  %>  
+  <head>
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <section class = "row justify-content-center">
+      <section class = "col-12 col-sm-6 col-md-3">
+        <section class = "form-container">
+            <main class="form-signin">
+              <form action="/login" method="POST">
+               <!-- <img class="mb-4" src="https://i1.wp.com/www.r3sc.com.br/wp-content/uploads/2018/01/163088-entrega-de-mercadorias-x-formas-de-evitar-problemas-e-atrasos.jpg?fit=999%2C667" alt="" width="300" height="200"> -->
+               <img class="mb-4" src="https://images-ext-2.discordapp.net/external/n2H496im2ODxpp_-hYvRDGiVKWyTlhr-Z7Lgcx7u_aQ/https/institucional.ufpel.edu.br/cache/imagens/c9a4f5cc802a2039451ad07fe562d44f.jpg" alt="" width="300" height="200">
+
+                <h1 class="h3 mb-3 fw-normal">Entre ou cadastre-se</h1>
+            
+                <div class="form-floating">
+                  <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="nome@exemplo.com">
+                  <label for="inputEmail"></label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" name="inputSenha" id="inputSenha" placeholder="Senha">
+                  <label for="inputSenha"></label>
+                </div>
+            
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Lembrar-me
+                  </label>
+                </div>
+                <button class="w-15 btn btn-lg btn-primary" type="submit">Entrar</button>
+                <a href="/cadastro" class="w-15 btn btn-lg btn-primary" role="button">Registrar</a>
+                <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+              </form>
+            </main>
+        </section>
+      </section>
+    </section>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </body>
+</html>
