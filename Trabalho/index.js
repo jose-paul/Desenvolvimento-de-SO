@@ -35,7 +35,11 @@ app.post('/filterEntregadorVeiculo', urlencodedParser, ControllerCliente.entrega
 app.post('/filterClientePedido', urlencodedParser, ControllerCliente.clientepedido);
 
 app.get('/' , (req, res) => {
-    res.render('../views/app');
+    res.render('../views/initial');
+});
+
+app.get('/Entre' , (req, res) => {
+    res.render('../views/signin');
 });
 
 app.get('/cadastro', (req, res) => {
@@ -75,7 +79,31 @@ app.get('/Erro' , (req, res) => {
     res.render('../views/error');
 });
 
-const PORT = process.env.PORT || 8083;
+app.get('/Erro1' , (req, res) => {
+    res.render('../views/error1');
+});
+
+app.get('/Erro2' , (req, res) => {
+    res.render('../views/error2');
+});
+
+app.get('/Erro3' , (req, res) => {
+    res.render('../views/error3');
+});
+
+app.get('/Erro4' , (req, res) => {
+    res.render('../views/error4');
+});
+
+app.get('/Erro5' , (req, res) => {
+    res.render('../views/error5');
+});
+
+app.get('/sobre' , (req, res) => {
+    res.render('../views/about');
+});
+
+const PORT = process.env.PORT || 3306;
 app.listen(PORT, () => {
     console.log(`API RODANDO PORTA ${PORT}`);
 });
