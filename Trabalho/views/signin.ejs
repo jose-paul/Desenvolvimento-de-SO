@@ -1,6 +1,29 @@
 <!doctype html>
 <html lang="en">
 
+<script>
+  const rmCheck = document.getElementById("rememberMe"),
+    emailInput = document.getElementById("email");
+
+if (localStorage.checkbox && localStorage.checkbox !== "") {
+  rmCheck.setAttribute("checked", "checked");
+  emailInput.value = localStorage.username;
+} else {
+  rmCheck.removeAttribute("checked");
+  emailInput.value = "";
+}
+
+function lsRememberMe() {
+  if (rmCheck.checked && emailInput.value !== "") {
+    localStorage.username = emailInput.value;
+    localStorage.checkbox = rmCheck.value;
+  } else {
+    localStorage.username = "";
+    localStorage.checkbox = "";
+  }
+}
+</script>
+
    <%- include('head');  %>  
   <head>
     <!-- Custom styles for this template -->
@@ -28,10 +51,10 @@
             
                 <div class="checkbox mb-3">
                   <label>
-                    <input type="checkbox" value="remember-me"> Lembrar-me
+                    <input type="checkbox" value="lsRememberMe" id="rememberMe"> Lembrar-me
                   </label>
                 </div>
-                <button class="w-15 btn btn-lg btn-primary" type="submit">Entrar</button>
+                <button class="w-15 btn btn-lg btn-primary" type="submit" onclick="lsRememberMe()">Entrar</button>
                 <a href="/cadastro" class="w-15 btn btn-lg btn-primary" role="button">Registrar</a>
               </form>
             </main>
